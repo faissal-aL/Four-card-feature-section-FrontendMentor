@@ -19,23 +19,43 @@ body{
     background-color: var(--VeryLightGray);
 }
 h1{
+    color: var(--VeryDarkBlue);
     text-align: center;
+    font-size: 2.2rem;
+    width: 430px;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+h2{
+    color: var(--VeryDarkBlue);
+    font-size: 1.3rem;
+    margin-top: 0em;
+}
 span{
     font-weight: 200;
 }
+p{
+    font-size: 0.85rem;
+    color: var(--GrayishBlue);
+    margin-bottom: 3em;
+}
 .top_paragraph{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 .container{
     box-sizing:border-box;  
-    padding: 20px;
+    padding: 30px;
     width: 30%;
     margin: auto;
     border-radius: 5px;
-    box-shadow: 0px 10px 10px var(--GrayishBlue) ;
+    box-shadow: 0px 10px 10px hsla(229, 6%, 66%, 0.352);;
 }
 .middle_containers{
     width: 30%;
@@ -55,9 +75,10 @@ span{
     border-top: 4px solid var(--Red);
 }
 .karma_container{
-    margin-top: 5px;
+    margin-top: 30px;
     width: 100%;
     border-top: 4px solid var(--Orange);
+   
 }
 .calculator_container{
     margin-top: auto;
@@ -68,5 +89,46 @@ span{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
+}
+.icon{
+    float: right;
+}
+
+@media screen and (width<900px) {
+    .cards{
+        width: 100%;
+    }
+}
+
+@media screen and (width<500px) {
+    body{
+        margin: 0px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    h1{
+        font-size: 1.7rem;
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .top_paragraph, .container{
+        width: 100%;
+    }
+    
+    .middle_containers{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team_container, .karma_container, .calculator_container{
+        margin-top: 2em;
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4em;
+    }
 }
