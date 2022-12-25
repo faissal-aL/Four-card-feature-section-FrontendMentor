@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* weights 200 400 600 */
+
+:root {
+  --font1: Poppins;
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+*{
+    font-family: var(--font1);
+}
+body{
+    background-color: var(--VeryLightGray);
+}
+h1{
+    text-align: center;
+}
+
+span{
+    font-weight: 200;
+}
+.top_paragraph{
+    text-align: center;
+}
+
+.container{
+    box-sizing:border-box;  
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px var(--GrayishBlue) ;
+}
+.middle_containers{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.supervisor_container{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top: 4px solid var(--Cyan);
+}
+.team_container{
+ 
+    width: 100%;
+    border-top: 4px solid var(--Red);
+}
+.karma_container{
+    margin-top: 5px;
+    width: 100%;
+    border-top: 4px solid var(--Orange);
+}
+.calculator_container{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top: 4px solid var(--Blue);
+}
+.cards{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
